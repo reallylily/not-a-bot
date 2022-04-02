@@ -50,8 +50,8 @@ pip3 install -r requirements.txt
 ```
 
 ### MacOSX
-If you are using MacOSX and encounter an SSL_CERTIFICATE error. Please apply the fix detailed https://stackoverflow.com/questions/42098126/mac-osx-python-ssl-sslerror-ssl-certificate-verify-failed-certificate-verify  
 
+If you are using MacOSX and encounter an SSL_CERTIFICATE error. Please apply the fix detailed https://stackoverflow.com/questions/42098126/mac-osx-python-ssl-sslerror-ssl-certificate-verify-failed-certificate-verify
 
 ## Get Started
 
@@ -62,9 +62,9 @@ Edit the values to replace with actual credentials and values
 ```json
 {
   //Where the image's path is
-  "image_path":"image.png",
+  "image_path": "image.png",
   // [x,y] where you want the top left pixel of the local image to be drawn on canvas
-  "image_start_coords": [741, 610],
+  "image_start_coords": [504, 436],
   // delay between starting threads (can be 0)
   "thread_delay": 2,
   // array of accounts to use
@@ -110,7 +110,7 @@ Just create multiple child arrays to "workers" in the .json
 
 ```json
 {
-  "image_path":"image.png",
+  "image_path": "image.png",
   "image_start_coords": [741, 610],
   "thread_delay": 2,
 
@@ -158,10 +158,9 @@ A dockerfile is provided. Instructions on installing docker are outside the scop
 
 To build: After editing your config.json, run `docker build . -t place-bot`. and wait for the image to build
 
-You can now run with 
+You can now run with
 
 `docker run place-bot`
-
 
 ## Developing
 
